@@ -26,7 +26,7 @@ jobs:
           channel: 'stable'
           architecture: x64
       - run: flutter pub get
-      - run: flutter analyze
+      - run: flutter test
       - run: flutter build apk --release --split-per-abi
 # ios build commented out since it causes error in github action runner
 #      - run: |
